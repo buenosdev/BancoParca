@@ -8,7 +8,7 @@ from pathlib import Path
 # from tkinter import *
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
-
+import pywinstyles
 
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\DaviBueno\Downloads\TkInter\build\assets\frame1")
@@ -58,8 +58,11 @@ button_1 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_1 clicked"),
-    relief="flat"
+    relief="flat",
+    background='#cccccc',
+    activebackground='#cccccc'
 )
+pywinstyles.set_opacity(button_1, color='#cccccc')
 button_1.place(
     x=39.0,
     y=279.0,
@@ -74,8 +77,11 @@ button_2 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_2 clicked"),
-    relief="flat"
+    relief="flat",
+    background='#cccccc',
+    activebackground='#cccccc'
 )
+pywinstyles.set_opacity(button_2, color='#cccccc')
 button_2.place(
     x=39.0,
     y=180.0,
@@ -106,8 +112,11 @@ button_3 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_3 clicked"),
-    relief="flat"
+    relief="flat",
+    background='#cccccc',
+    activebackground='#cccccc'
 )
+pywinstyles.set_opacity(button_3, color='#cccccc')
 button_3.place(
     x=39.0,
     y=938.0,
@@ -155,8 +164,11 @@ button_4 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_4 clicked"),
-    relief="flat"
+    relief="flat",
+    background='#cccccc',
+    activebackground='#cccccc'
 )
+pywinstyles.set_opacity(button_4, color='#cccccc')
 button_4.place(
     x=1727.3583984375,
     y=95.53799438476562,
@@ -171,8 +183,11 @@ button_5 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_5 clicked"),
-    relief="flat"
+    relief="flat",
+    background='#cccccc',
+    activebackground='#cccccc'
 )
+pywinstyles.set_opacity(button_5, color='#cccccc')
 button_5.place(
     x=656.609375,
     y=461.7156982421875,
@@ -187,8 +202,11 @@ button_6 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_6 clicked"),
-    relief="flat"
+    relief="flat",
+    background='#cccccc',
+    activebackground='#cccccc'
 )
+pywinstyles.set_opacity(button_6, color='#cccccc')
 button_6.place(
     x=656.609375,
     y=713.609130859375,
@@ -203,8 +221,11 @@ button_7 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_7 clicked"),
-    relief="flat"
+    relief="flat",
+    background='#cccccc',
+    activebackground='#cccccc'
 )
+pywinstyles.set_opacity(button_7, color='#cccccc')
 button_7.place(
     x=428.0,
     y=713.4923706054688,
@@ -219,8 +240,11 @@ button_8 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_8 clicked"),
-    relief="flat"
+    relief="flat",
+    background='#cccccc',
+    activebackground='#cccccc'
 )
+pywinstyles.set_opacity(button_8, color='#cccccc')
 button_8.place(
     x=428.0,
     y=461.5989990234375,

@@ -8,7 +8,7 @@ from pathlib import Path
 # from tkinter import *
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
-
+import pywinstyles
 
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\DaviBueno\Downloads\TkInter\build\assets\frame2")
@@ -74,8 +74,11 @@ button_1 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_1 clicked"),
-    relief="flat"
+    relief="flat",
+    background='#cccccc',
+    activebackground='#cccccc'
 )
+pywinstyles.set_opacity(button_1, color='#cccccc')
 button_1.place(
     x=228.0,
     y=727.0,
@@ -114,7 +117,7 @@ entry_2 = Entry(
     bd=0,
     bg="#FFFFFF",
     fg="#000716",
-    highlightthickness=0
+    highlightthickness=0,
 )
 entry_2.place(
     x=113.0,
@@ -175,8 +178,11 @@ button_2 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_2 clicked"),
-    relief="flat"
+    relief="flat",
+    background='#cccccc',
+    activebackground='#cccccc'
 )
+pywinstyles.set_opacity(button_2, color='#cccccc')
 button_2.place(
     x=129.0,
     y=642.0,
