@@ -131,7 +131,7 @@ button_1 = Button(
     background='#cccccc',
     activebackground='#cccccc'
 )
-pywinstyles.set_opacity(button_1, color='#cccccc')
+
 
 button_1.place(
     x=1346.0,
@@ -160,7 +160,7 @@ button_2 = Button(
     background='#cccccc',
     activebackground='#cccccc'
 )
-pywinstyles.set_opacity(button_2, color='#cccccc')
+
 
 button_2.place(
     x=1554.0,
@@ -189,7 +189,7 @@ button_3 = Button(
     background='#cccccc',
     activebackground='#cccccc'
 )
-pywinstyles.set_opacity(button_3, color='#cccccc')
+
 
 button_3.place(
     x=1129.0,
@@ -226,7 +226,7 @@ button_4 = Button(
     background='#cccccc',
     activebackground='#cccccc'
 )
-pywinstyles.set_opacity(button_4, color='#cccccc')
+
 
 button_4.place(
     x=39.0,
@@ -235,26 +235,7 @@ button_4.place(
     height=74.0
 )
 
-button_image_5 = PhotoImage(
-    file=relative_to_assets("button_5.png"))
-button_5 = Button(
-    image=button_image_5,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: print("button_5 clicked"),
-    relief="flat",
-    background='#cccccc',
-    activebackground='#cccccc'
-)
 
-pywinstyles.set_opacity(button_5, color='#cccccc')
-
-button_5.place(
-    x=39.0,
-    y=180.0,
-    width=225.0,
-    height=74.0
-)
 
 canvas.create_rectangle(
     47.0,
@@ -283,7 +264,6 @@ button_6 = Button(
     background='#cccccc',
     activebackground='#cccccc'
 )
-pywinstyles.set_opacity(button_6, color='#cccccc')
 
 button_6.place(
     x=39.0,
@@ -291,5 +271,32 @@ button_6.place(
     width=225.0,
     height=73.0
 )
+
+button_image_5 = PhotoImage(
+    file=relative_to_assets("button_5.png"))
+button_5 = Button(
+    image=button_image_5,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_5 clicked"),
+    relief="flat",
+    background='#cccccc',
+    activebackground='#cccccc'
+)
+
+pywinstyles.set_opacity(button_5, color='#cccccc')
+pywinstyles.set_opacity(button_6, color='#cccccc')
+pywinstyles.set_opacity(button_4, color='#cccccc')
+pywinstyles.set_opacity(button_3, color='#cccccc')
+pywinstyles.set_opacity(button_2, color='#cccccc')
+pywinstyles.set_opacity(button_1, color='#cccccc')
+
+button_5.place(
+    x=39.0,
+    y=180.0,
+    width=225.0,
+    height=74.0
+)
+
 window.resizable(False, False)
 window.mainloop()
